@@ -50,7 +50,7 @@ const footerSections: FooterSection[] = [
       },
       {
         label: '利用規約',
-        href: '#'
+        href: './terms-of-service'
       },
     ]
   },

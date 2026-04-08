@@ -3,19 +3,24 @@
 //import viteLogo from './assets/vite.svg'
 //import heroImg from './assets/hero.png'
 //import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router'
 
-import Layout from "./Layout"
+import Home from './components/Home'
+import Layout from './Layout'
+import TermsOfService from './components/terms-of-service/TermsOfService'
+
 
 function App() {
 
   return (
-    <Layout>
-      <h1 className="text-3xl font-bold">メインコンテンツ</h1>
-      <p className="mt-4">
-        ここにはページの具体的な内容が入ります。
-        コンテンツが短くても、Layoutの設定によりフッターは画面の一番下に配置されます。
-      </p>
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   )
   /*const [count, setCount] = useState(0)
 
