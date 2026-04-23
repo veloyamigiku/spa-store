@@ -1,0 +1,13 @@
+.privacy_policy_title {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.privacy_policy_title_en {
+  font-weight: bold;
+}
+
+.privacy_policy_title_ja {
+  font-size: 24px;
+  font-weight: bold;
+}

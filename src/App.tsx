@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 
 import Home from './components/Home'
 import Layout from './Layout'
+import PrivacyPolicy from './components/privacy-policy/PrivacyPolicy'
 import TermsOfService from './components/terms-of-service/TermsOfService'
 
 
@@ -17,6 +18,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
       </Layout>

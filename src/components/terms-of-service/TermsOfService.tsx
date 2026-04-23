@@ -19,6 +19,11 @@ const TermsOfService: React.FC = () => {
         <div>本規約は利用者と当社との間の本サービスに関する一切の関係に適用します。</div>
         <div>当社が本サービスの円滑な運用を図るため必要に応じて利用者に通 知する本サービスの利用に関する諸規程は、本規約の一部を構成するものとします。</div>
       </Provisions>
+
+      <Provisions title="第3条 本規約の変更">
+        <div>当社は、本規約を必要に応じて変更することがあります。</div>
+        <div>本規約の変更は利用者に通知された時に効力を生じるものとします。</div>
+      </Provisions>
       
       <SupplementrayProvisions />
 

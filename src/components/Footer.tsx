@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 interface FooterLink {
   label: string
@@ -46,7 +47,7 @@ const footerSections: FooterSection[] = [
       },
       {
         label: 'プライバシーポリシー',
-        href: '#'
+        href: './privacy-policy'
       },
       {
         label: '利用規約',
@@ -79,12 +80,12 @@ const Footer: React.FC = () => {
             <ul className='space-y-2'>
               {section.links.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className='hover:text-white transition-colors duration-200'
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
