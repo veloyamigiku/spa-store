@@ -43,7 +43,7 @@ const footerSections: FooterSection[] = [
     links: [
       {
         label: '特定商取引法に基づく表記',
-        href: '#'
+        href: './transactions-law'
       },
       {
         label: 'プライバシーポリシー',

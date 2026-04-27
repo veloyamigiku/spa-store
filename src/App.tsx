@@ -9,6 +9,7 @@ import Home from './components/Home'
 import Layout from './Layout'
 import PrivacyPolicy from './components/privacy-policy/PrivacyPolicy'
 import TermsOfService from './components/terms-of-service/TermsOfService'
+import TransactionsLaw from './components/transactions-law/TransactionsLaw'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/transactions-law" element={<TransactionsLaw />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
