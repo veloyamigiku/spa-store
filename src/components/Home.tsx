@@ -1,4 +1,5 @@
 import React from 'react'
+import Checkout from './checkout/Checkout'
 
 const Home: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
         ここにはページの具体的な内容が入ります。
         コンテンツが短くても、Layoutの設定によりフッターは画面の一番下に配置されます。
       </p>
+      <Checkout />
     </div>
   )
 }
