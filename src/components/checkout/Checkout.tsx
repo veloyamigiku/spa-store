@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 import styles from './Checkout.module.css'
 
@@ -10,7 +10,7 @@ const Checkout: React.FC = () => {
   const handlePayPayCheckout = async () => {
     setLoading(true)
     setError(null)
-    console.log('hoge:', import.meta.env.VITE_PAYPAY_API_URL)
+    
     try {
       const response = await fetch(
         import.meta.env.VITE_PAYPAY_API_URL + '/create_payment_url',

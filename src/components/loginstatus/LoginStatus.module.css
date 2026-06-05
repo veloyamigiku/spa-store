@@ -1,0 +1,13 @@
+.login_status_root {
+  display: inline;
+}
+
+.logined_status {
+  display: inline;
+  padding: 0 0 0 3px;
+}
+
+.not_login_status {
+  display: inline;
+  padding: 0 0 0 3px;
+}
