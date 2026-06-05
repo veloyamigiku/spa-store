@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
+import { useAuth0 } from '@auth0/auth0-react'
 
 import styles from './Checkout.module.css'
 
 const Checkout: React.FC = () => {
   
+  const {
+    getAccessTokenSilently
+  } = useAuth0()
+
   const [loading, setLoading] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -12,11 +17,14 @@ const Checkout: React.FC = () => {
     setError(null)
     
     try {
+      const token = await getAccessTokenSilently()
+
       const response = await fetch(
         import.meta.env.VITE_PAYPAY_API_URL + '/create_payment_url',
         {
           method: 'GET',
           headers: {
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
           },
         }
